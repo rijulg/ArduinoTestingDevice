@@ -51,3 +51,7 @@ After running the program open the Serial Monitor and enter the name of the slav
 
 ### Manchester Sender
 Provide the output from pin 22
+
+# What it looks like
+The setup of 2 devices talking with each other (Manchester Sender and Manchester Decoder)
+![Setup](https://raw.githubusercontent.com/rijulg/ArduinoTestingDevice/master/setup.jpg)
