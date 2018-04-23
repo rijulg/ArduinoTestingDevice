@@ -9,6 +9,7 @@
  */
 
 void setupBluetoothSlave(){
+  getSlaveName();
   baseBluetoothSetup(MODE_SLAVE);
 }
 

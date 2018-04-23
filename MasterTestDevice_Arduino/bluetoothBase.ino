@@ -36,6 +36,19 @@ void talkToBluetooth(){
   }
 }
 
+void getSlaveName(){
+  bool found = false;
+  while(!found){
+    if(Serial.available()){
+      String name = Serial.readString();
+      if(name.length() > 0){
+        slaveName = name; 
+      }
+      found = true;
+    }
+  }
+}
+
 bool bluetoothConnected(){
   if(isConnected) return true;
   if(bluetoothSerial.available()){

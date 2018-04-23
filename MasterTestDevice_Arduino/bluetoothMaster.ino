@@ -38,19 +38,6 @@ void loopBluetoothMaster(){
   talkToBluetooth();
 }
 
-void getSlaveName(){
-  bool found = false;
-  while(!found){
-    if(Serial.available()){
-      String name = Serial.readString();
-      if(name.length() > 0){
-        slaveName = name; 
-      }
-      found = true;
-    }
-  }
-}
-
 void getSlaveAddress(){
   //find the target slave
   int nameIndex = 0;
